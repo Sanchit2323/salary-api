@@ -14,7 +14,7 @@
 	<name>salary</name>
 	<description>Java microservice to handle all salary related data</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
