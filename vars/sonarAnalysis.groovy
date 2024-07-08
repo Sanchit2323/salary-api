@@ -1,5 +1,5 @@
 def call() {
-    stage('Bug Analysis with SonarQube') {
+    stage('Static Analysis with SonarQube') {
         steps {
             script {
                 withSonarQubeEnv('SonarQube') {
