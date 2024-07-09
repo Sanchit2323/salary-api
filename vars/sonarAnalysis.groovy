@@ -1,6 +1,12 @@
 def call() {
     stage('Static Analysis with SonarQube') {
-           sh 'mvn sonar:sonar'
-   }
+        steps {
+            script {
+                withSonarQubeEnv('SonarQube') {
+                    sh "${tool 'mvn'}/bin/mvn clean package -Dmaven.test.skip=true sonar:sonar"
+                }
+            }
+        }
+    }
 }
     
